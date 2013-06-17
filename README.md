@@ -27,7 +27,7 @@ service apache2 restart
 7. Create access tokens
 8. In magento admin system config find Aligent Feeds under Advanced and enter the consumer key/secret and access token/secret, enter the screen name for the twitter account to get the feed for as well as the amount of tweets to request, save config
 9. Add Aligent Feeds block in layout xml
-```` xml
+````xml
 <block type="aligent_feeds/twitter" name="social" template="aligent/feeds/twitter.phtml" />
 ````
 10. Twitter feed!
