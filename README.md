@@ -3,14 +3,14 @@ Gets a feed of a twitter users tweets from Twitter API v1.1
 
 ## Requirements
 1. Twitter account to create Developer App (to generate oAuth keys)
-2. PHP oAuth PECL extension
+2. [PHP oAuth PECL extension](http://php.net/manual/en/book.oauth.php)
 
 ## Installation
 1. Install oAuth php extension
 ````
 sudo pecl install oAuth
 ````
-2. If you get an error comaining about prec not being available install that via
+2. If you get an error complaining about prec not being available install that using
 ````
 apt-get install libpcre3-dev
 ````
@@ -23,12 +23,12 @@ extension=oauth.so
 ````
 service apache2 restart
 ````
-5. Install module
+5. Install Magento module
 6. Login to Twitter developer site and create a new app (doesn't have to be on the account the feed will be pulled from)
 7. Create access tokens
 8. In magento admin system config find Aligent Feeds under Advanced and enter the consumer key/secret and access token/secret, enter the screen name for the twitter account to get the feed for as well as the amount of tweets to request, save config
 9. Add Aligent Feeds block in layout xml
-````xml
+````
 <block type="aligent_feeds/twitter" name="social" template="aligent/feeds/twitter.phtml" />
 ````
 10. Twitter feed!
