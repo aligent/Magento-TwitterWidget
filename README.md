@@ -22,6 +22,7 @@ extension=oauth.so
 4. Restart Apache
 ````
 service apache2 restart
+````
 5. Install module
 6. Login to Twitter developer site and create a new app (doesn't have to be on the account the feed will be pulled from)
 7. Create access tokens
