@@ -15,16 +15,13 @@ sudo pecl install oAuth
 apt-get install libpcre3-dev
 ````
 Then run the oAuth install again
-
 3. Add the extension to php.ini
 ````
 extension=oauth.so
 ````
-
 4. Restart Apache
 ````
 service apache2 restart
-
 5. Install module
 6. Login to Twitter developer site and create a new app (doesn't have to be on the account the feed will be pulled from)
 7. Create access tokens
