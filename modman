@@ -1,0 +1,8 @@
+#--------------------------------------------------
+# Modman file for Aligent Feeds
+#--------------------------------------------------
+
+#symlinking with modman
+app/code/community/Aligent/Feeds/
+app/design/frontend/base/default/template/aligent/feeds
+app/etc/modules/Aligent_Feeds.xml

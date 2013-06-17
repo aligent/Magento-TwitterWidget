@@ -1,0 +1,6 @@
+<?php $tweets = $this->getTweets(); ?>
+<ul class="twitter-feed">
+<?php foreach ($tweets as $tweet): ?>
+    <li><?php echo $tweet->text; ?> <span class="date">at <?php echo date('H:i \o\n d/m/Y', strtotime($tweet->created_at)) ?></span></li>
+<?php endforeach; ?>
+</ul>

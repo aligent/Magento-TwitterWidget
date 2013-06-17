@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+
+<config>
+    <sections>
+        <aligentfeeds translate="label" module="aligent_feeds">
+            <label>Aligent Feeds</label>
+            <tab>advanced</tab>
+            <sort_order>1000</sort_order>
+            <frontend_type>text</frontend_type>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <twitter translate="label">
+                    <label>Twitter</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled>
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment><![CDATA[Whether or not the feed will be retrieved]]></comment>
+                        </enabled>
+                        <consumer_key>
+                            <label>Consumer Key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[The customer key from the Twitter Developer Application]]></comment>
+                        </consumer_key>
+                        <consumer_secret>
+                            <label>Consumer Secret</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[The customer secret from the Twitter Developer Application]]></comment>
+                        </consumer_secret>
+                        <access_token>
+                            <label>Access Token</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[The access token from the Twitter Developer Application (may need to be generated if it hasn't already)]]></comment>
+                        </access_token>
+                        <access_token_secret>
+                            <label>Access Token Secret</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[The access token secret from the Twitter Developer Application (may need to be generated if it hasn't already)]]></comment>
+                        </access_token_secret>
+                        <screen_name>
+                            <label>Screen Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[The Twitter username to get a feed from]]></comment>
+                        </screen_name>
+                        <tweet_amount>
+                            <label>Tweet Amount</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[The amount of tweets to retrieve leading up to the latest]]></comment>
+                        </tweet_amount>
+                        <user_data>
+                            <label>User Data</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment><![CDATA[Whether or not to get the user data with each tweet]]></comment>
+                        </user_data>
+                        <get_replies>
+                            <label>Get Replies</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment><![CDATA[Whether or not to get tweets that are replies to other tweets]]></comment>
+                        </get_replies>
+                    </fields>
+                </twitter>
+            </groups>
+        </aligentfeeds>
+    </sections>
+</config>
