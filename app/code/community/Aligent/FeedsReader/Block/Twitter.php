@@ -1,6 +1,6 @@
 <?php
 
-class Aligent_Feeds_Block_Twitter extends Mage_Core_Block_Template
+class Aligent_FeedsReader_Block_Twitter extends Mage_Core_Block_Template
 {
 
     function __construct()
@@ -13,18 +13,18 @@ class Aligent_Feeds_Block_Twitter extends Mage_Core_Block_Template
 
     function getTweets($count = null, $trimUser = null, $replies = null)
     {
-        $enabled = Mage::getStoreConfig('aligentfeeds/twitter/enabled');
+        $enabled = Mage::getStoreConfig('aligentfeedsreader/twitter/enabled');
         if (!$enabled) return array();
-        $count = $count ? $count : Mage::getStoreConfig('aligentfeeds/twitter/tweet_amount');
-        $trimUser = $trimUser ? $trimUser : Mage::getStoreConfig('aligentfeeds/twitter/user_data');
+        $count = $count ? $count : Mage::getStoreConfig('aligentfeedsreader/twitter/tweet_amount');
+        $trimUser = $trimUser ? $trimUser : Mage::getStoreConfig('aligentfeedsreader/twitter/user_data');
         $trimUser = $trimUser ? '0' : '1';
-        $replies = $replies ? $replies : Mage::getStoreConfig('aligentfeeds/twitter/get_replies');
+        $replies = $replies ? $replies : Mage::getStoreConfig('aligentfeedsreader/twitter/get_replies');
         $replies = $replies ? '0' : '1';
-        $screenName = Mage::getStoreConfig('aligentfeeds/twitter/screen_name');
-        $consumerKey = Mage::getStoreConfig('aligentfeeds/twitter/consumer_key');
-        $consumerSecret = Mage::getStoreConfig('aligentfeeds/twitter/consumer_secret');
-        $accessToken = Mage::getStoreConfig('aligentfeeds/twitter/access_token');
-        $accessTokenSecret = Mage::getStoreConfig('aligentfeeds/twitter/access_token_secret');
+        $screenName = Mage::getStoreConfig('aligentfeedsreader/twitter/screen_name');
+        $consumerKey = Mage::getStoreConfig('aligentfeedsreader/twitter/consumer_key');
+        $consumerSecret = Mage::getStoreConfig('aligentfeedsreader/twitter/consumer_secret');
+        $accessToken = Mage::getStoreConfig('aligentfeedsreader/twitter/access_token');
+        $accessTokenSecret = Mage::getStoreConfig('aligentfeedsreader/twitter/access_token_secret');
         $requestUrl = 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=' . $screenName .  '&count=' . $count . '&trim_user=' . $trimUser . '&exclude_replies=' . $replies;
 
         try {

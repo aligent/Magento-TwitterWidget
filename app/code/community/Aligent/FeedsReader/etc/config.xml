@@ -7,25 +7,25 @@
     </modules>
     <global>
         <blocks>
-            <aligent_feeds>
-                <class>Aligent_Feeds_Block</class>
-            </aligent_feeds>
+            <aligent_feedsreader>
+                <class>Aligent_FeedsReader_Block</class>
+            </aligent_feedsreader>
         </blocks>
         <helpers>
-            <aligent_feeds>
-                <class>Aligent_Feeds_Helper</class>
-            </aligent_feeds>
+            <aligent_feedsreader>
+                <class>Aligent_FeedsReader_Helper</class>
+            </aligent_feedsreader>
         </helpers>
     </global>
     <default>
-        <aligentfeeds>
+        <aligentfeedsreader>
             <twitter>
                 <enabled>1</enabled>
                 <tweet_amount>10</tweet_amount>
                 <user_data>0</user_data>
                 <get_replies>0</get_replies>
             </twitter>
-        </aligentfeeds>
+        </aligentfeedsreader>
     </default>
     <adminhtml>
         <acl>
@@ -36,9 +36,9 @@
                             <children>
                                 <config>
                                     <children>
-                                        <aligentfeeds>
+                                        <aligentfeedsreader>
                                             <title>Store Aligent Feeds Module Section</title>
-                                        </aligentfeeds>
+                                        </aligentfeedsreader>
                                     </children>
                                 </config>
                             </children>

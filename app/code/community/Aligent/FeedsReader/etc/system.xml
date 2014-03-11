@@ -2,7 +2,7 @@
 
 <config>
     <sections>
-        <aligentfeeds translate="label" module="aligent_feeds">
+        <aligentfeedsreader translate="label" module="aligent_feedsreader">
             <label>Aligent Feeds</label>
             <tab>advanced</tab>
             <sort_order>1000</sort_order>
@@ -106,6 +106,6 @@
                     </fields>
                 </twitter>
             </groups>
-        </aligentfeeds>
+        </aligentfeedsreader>
     </sections>
 </config>
