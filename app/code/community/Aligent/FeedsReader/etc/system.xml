@@ -3,7 +3,7 @@
 <config>
     <sections>
         <aligentfeedsreader translate="label" module="aligent_feedsreader">
-            <label>Aligent Feeds</label>
+            <label>Twitter Feeds Reader</label>
             <tab>advanced</tab>
             <sort_order>1000</sort_order>
             <frontend_type>text</frontend_type>
